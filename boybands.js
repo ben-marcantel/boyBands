@@ -1,23 +1,44 @@
 var bands = ["Boyz II Men", "NSync", "New Kids on the Block", "98 Degrees", "One Direction"];
 var vegetables = ["Carrots", "Kale", "Zucchini", "Broccoli", "Squash"];
-var selected = /**create array of bands and vegetables? to cycle send to loop count*/
 
 
-// The number of loops to perform (what if the array changes?)
-var loopCount = selected.length;
 
 
-// Keep track of which band we're on in the loop
-var currentBand = bands [];
 
-// Keep track of which veggie we're on in the loop
-var currentVeggie = vegetables[];
+function looper(b, v){
+  
+  for (i=0; i<b.length; i++) {
+    currentBands = bands[i];
+    currentVegetable = vegetables[i];
+    document.getElementById("boy-bands").innerHTML += currentBands + " ";
+    document.getElementById("vegetables").innerHTML += currentVegetable + " ";
+     };
+}
 
-// Get a reference to the appropriate DOM element for bands
+looper (bands , vegetables);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+var loopCount = bands.length;
+var currentBand = bands[loopCount];
+var currentVeggie = vegetables[loopCount];
+
 var bandElement = document.getElementById("boy-bands");
-
-// Get a reference to the appropriate DOM element for vegetables
 var veggieElement = document.getElementById("vegetables");
+
+
 
 // Start looping
 for (var loopTracker = 0; loopTracker < loopCount; loopTracker += 1) {
@@ -30,3 +51,4 @@ for (var loopTracker = 0; loopTracker < loopCount; loopTracker += 1) {
   currentVeggie = document.write(veggieElement);
 
 }
+*/
